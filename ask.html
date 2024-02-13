@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Assistant</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #0b0a0a;
+        flex-direction: column; /* Added to arrange elements vertically */
+    }
+    .border-line {
+        position: relative;
+        width: 90%; /* Adjust as needed */
+        height: 7px;
+        background: linear-gradient(to right, red 50%, green 50%);
+        margin-bottom: 20px; /* Added to create space between the lines and text */
+    }
+    .text {
+        color: white; /* Adjust text color as needed */
+    }
+    .profile-pictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px; /* Added to create space between the pictures and text */
+    }
+    .profile-picture {
+        width: 150px; /* Adjust the width and height as needed */
+        height: 150px;
+        border-radius: 50%; /* This makes the image round */
+        overflow: hidden; /* This hides any part of the image that goes beyond the circle */
+        margin: 0 10px; /* Added to create space between the pictures */
+    }
+    .profile-picture.center {
+        width: 200px; /* Adjust the width and height of the center picture */
+        height: 200px;
+    }
+    .profile-picture img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .text1 {
+        color: white; /* Adjust text color as needed */
+        font-size: 25px; /* Set font size to 20 */
+        font-style: italic; /* Make text italic */
+    }
+    .text {
+        color: white; /* Adjust text color as needed */
+        font-size: 30px; /* Set font size to 20 */
+        font-style: Bold; /* Make text italic */
+    }
+    text1 {
+        font-size: 24px;
+        color: black;
+    }
+    .emoji {
+        color: yellow;
+    }
+    .text1 {
+        font-size: 24px;
+        color: rgb(242, 237, 237);
+    }
+    .heart-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+    backdrop-filter: blur(4px); /* Apply blur effect */
+    color: rgb(237, 231, 231); /* Set text color to black */
+  }
+</style>
+</head>
+<body>
+    <div class="profile-pictures">
+        <div class="profile-picture">
+            <img src="2.jpg" alt="Your Image">
+        </div>
+        <div class="profile-picture center">
+            <img src="3.jpg" alt="Your Image">
+        </div>
+        <div class="profile-picture">
+            <img src="4.jpg" alt="Your Image">
+        </div>
+    </div>
+    <div class="text"><h1>JHAN PAULINE CARALDE TAN</h1></div>
+    <div class="border-line"></div>
+    <div class="text1">Would you like to be my Valentine on February 14, 2024?
+        <a href="javascript:void(0)" onclick="showHeart()">
+            <span style="color: yellow;">&#x1F44D;</span>
+          </a>
+          
+          <div id="heartPopup" class="heart-popup">
+            <span style="color: red; font-size: 20px;">&#10084;</span>
+            <p>JHAN, you're the best! My master will be overjoyed on February 14, 2024.</p>
+            <p>THANK YOU, master AI Assistant</p>
+            <button onclick="proceedToInfo()">Master Information</button>
+          </div>
+         
+        <span style="color: yellow; cursor: pointer;" onclick="showSadEmoji()">&#x1F44E;</span>
+    </div>
+    
+    <script>
+          function showHeart() {
+            document.getElementById("heartPopup").style.display = "block";
+          }
+          function proceedToInfo() {
+            window.location.href = "master.html";
+          }
+        function showSadEmoji() {
+            alert("😢Hey! Once again, you've broken my master's heart. Would you please consider giving him another chance to prove himself?");
+        }
+        
+    </script>
+</body>
+</html>

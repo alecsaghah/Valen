@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    background-image: url('1.jpg');
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px); /* Adjust the blur effect as needed */
+    z-index: -1; /* Ensure the background is behind other content */
+}
+
+.background-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.profile-picture {
+    width: 150px; /* Adjust the width and height as needed */
+    height: 150px;
+    border-radius: 50%; /* This makes the image round */
+    overflow: hidden; /* This hides any part of the image that goes beyond the circle */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

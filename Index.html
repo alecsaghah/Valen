@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    height: 63vh;
+    background-image: url('1.jpg'); /* Add your blurred background image */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Add this to allow absolute positioning */
+  }
+  
+  .profile-picture {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the image circular */
+    border: 7px solid rgb(247, 241, 241); /* Add border to make it stand out */
+  }
+</style>
+</head>
+<body>
+   <a href="ask.html"><img src="5.jpg" alt="Profile Picture" class="profile-picture"></a>
+</body>
+</html>
